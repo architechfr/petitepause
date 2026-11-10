@@ -4,8 +4,8 @@ const $ = (id) => document.getElementById(id);
 const canvas = $('gameCanvas');
 const ctx = canvas.getContext('2d', {alpha: false});
 const PALETTE = ['#eb5266','#347cef','#16ad79','#ed9f37','#9a65e8','#14a4b5','#d45f9c','#819c31','#b86c4d'];
-const PROGRESS = 'sans-croiser-expert-progress-2026-v1';
-const SESSION = 'sans-croiser-expert-session-2026-v1';
+const PROGRESS = 'sans-croiser-expert-progress-2026-v2'; // v2 (11/11/2026) : nouvelles grilles a solution unique, progression repartie de zero
+const SESSION = 'sans-croiser-expert-session-2026-v2';
 const preview = new URLSearchParams(location.search).get('final')==='1';
 const LEVELS = window.SC_LEVELS;
 if(!Array.isArray(LEVELS)||LEVELS.length!==60)throw Error('Données des niveaux manquantes');
